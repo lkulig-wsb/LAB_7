@@ -35,14 +35,9 @@ public class TextFile {
             customOut.close();
             System.out.println("\n Dane zostały zapisane do pliku.");
 
-
-
         }catch(Exception e){
             //Obsługa błędów związanych z operacją zapisu danych do pliku.
             e.printStackTrace();
         }
-
-
-
     }
 }

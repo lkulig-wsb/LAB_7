@@ -26,16 +26,10 @@ public class ReadFile {
             bufferedReader.close();
             fileReader.close();
 
-
         } catch(IOException e) {
 
             //Obsługa błędów związanych z operacją odczytu pliku.
             e.printStackTrace();
-
         }
-
-
-
-
     }
 }
