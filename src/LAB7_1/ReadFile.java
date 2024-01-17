@@ -7,7 +7,7 @@ public class ReadFile {
     public static void main(String[] args){
 
         //Ścieżka do pliku.
-        String filePath = "C:/Users/l.kulig/Desktop/plikiJava/file.txt";
+        String filePath = "C:/Users/l.kulig/Desktop/plikiJava/tablica.txt";
 
         try{
             //Utworzenie obiektu FileReader. Obiekt odczytuje znaki z pliku.

@@ -9,6 +9,7 @@ public class TextFile {
 
         //Ścieżka do pliku gdzie bedziemy dawać wyjście.
         String filePath = "C:/Users/l.kulig/Desktop/plikiJava/file.txt";
+        PrintStream originalOut = System.out;
 
         try{
 
@@ -27,17 +28,23 @@ public class TextFile {
 
             System.out.println("To jest przykładowa linia tekstu która zostanie wpisana do pliku.");
             System.out.println("A to kolejna linia.");
+            System.out.println("A to kolejna linia.");
 
             //Powrót do standardowego strumienia wyjścia .
             System.setOut(System.out);
 
             //Zamknięcie strumienia wyjścia, a jednocześnie zamknięcie pliku.
             customOut.close();
-            System.out.println("\n Dane zostały zapisane do pliku.");
+            //System.out.println("\n Dane zostały zapisane do pliku.");
+
 
         }catch(Exception e){
             //Obsługa błędów związanych z operacją zapisu danych do pliku.
             e.printStackTrace();
+        } finally {
+            System.setOut(originalOut);
+
+            System.out.println("\n Dane zostały zapisane do pliku.");
         }
     }
 }
