@@ -6,7 +6,7 @@ import java.io.IOException;
 public class Application5 {
     public static void main(String[] args){
 
-        //Utworzenie obiektów klasy Kierowca i Klasy Auto
+        //Utworzenie obiektów klasy Kierowca i Klasy Auto.
         Kierowca k1 = new Kierowca("Jan","Kowalski",32,"89051298673");
         Auto a1 = new Auto("W VGZZZ5N Z 8 W 031284",2011,"Ford","Mondeo");
 
@@ -25,7 +25,9 @@ public class Application5 {
         String fileNameAuto = "autoInfo.txt";
         savetoFile(filePathAuto,fileNameAuto, a1.infoToSave());
     }
-    //Metoda do zapisu danych do pliku
+    //Metoda do zapisu danych do pliku.
+    //Metoda jako argumenty przyjmuje ścieżkę do pliku, nazwę pliku oraz dane do zapisu.
+    //Metoda tworzy objekt FileWriter i operacj write() do zapisu danych do pliku.
     private static void savetoFile(String path, String fileName, String data){
 
         try(FileWriter fileWriter = new FileWriter(path + File.separator + fileName)){
@@ -34,10 +36,5 @@ public class Application5 {
         }catch (IOException e){
             System.err.println("Błąd podczas zapisu: " + e.getMessage());
         }
-
-
-
     }
-
-
 }

@@ -12,7 +12,7 @@ abstract class Book{
     private String autor;
     private int rokWydania;
 
-    //Kostruktor klasy Book.
+    //Konstruktor klasy Book.
     public Book(String tytul, String autor, int rokWydania){
         this.tytul = tytul;
         this.autor = autor;

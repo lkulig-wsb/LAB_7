@@ -18,8 +18,6 @@ class Osoba2 implements Serializable {
     public String getInfoString(){
         return "Imię: " + this.imie + ", Nazwisko: " + this.nazwisko + ", Wiek: " + this.wiek;
     }
-
-
 }
 public class Application42 {
     public static void main(String[] args){
@@ -55,8 +53,6 @@ public class Application42 {
                 System.out.println(line);
             }
             bufferedReader.close();
-
-
 
         }catch(Exception e){
             e.printStackTrace();
